@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* start common css */
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1250px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* end common css */
+
+
+
+@media only screen and (max-width:567px) {
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .main_header {
+    width: 200PX;
+  }
+
+}
+
+/* start header css */
+.main_header {
+  height: 77px;
+  width: 1200px;
+  background: #E9F3E58C;
+  position: absolute;
+  top: 20px;
+  border-radius: 8px;
+  position: fixed;
+  z-index: 99;
+  backdrop-filter: blur(31px);
+  opacity: 0.9;
+}
+
+.header_menu ul>li {
+  transition: all .3s linear;
+}
+
+.header_menu ul>li>a {
+  color: black;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  position: relative;
+  transition: all .3s linear;
+}
+
+.header_menu>ul>li a:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  top: 55px;
+}
+
+.header_menu>ul {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+  padding: 0;
+  margin: 0;
+}
+
+.header_menu {
+  display: flex;
+  gap: 33px;
+}
+
+.main_header .flex_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 25px 0 25px;
+}
+
+
+/* end header css */
+/* start-bannar-css*/
+
+#backgroundVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+}
+
+
+
+.get_started_btn>a {
+  text-transform: capitalize;
+  background-color: #218B00;
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.header_menu ul>li>a img {
+  position: absolute;
+  top: 8px;
+  right: -10px;
+}
+
+.dropdown li.line::after {
+  content: "";
+  display: inline-block;
+  background-color: #B9B9B9;
+  position: absolute;
+  height: 1px;
+  width: 147px;
+  top: 49px;
+  left: 27px;
+}
+
+.dropdown li>span {
+  background-color: #C3FEB1;
+  border-radius: 6px;
+  margin: 0 0 0 8px;
+  padding: 4px;
+}
+
+.dropdown li {
+  font-size: 14px !important;
+}
+
+.dropdown {
+  background-color: #fff;
+  position: absolute;
+  top: 52px;
+  right: -140px;
+  padding: 10px 25px;
+  border: 1px;
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+  width: 255px;
+  height: 95px;
+  line-height: 40px;
+  transition: all .3s linear;
+}
+
+.banner_heading {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 715px;
+  inset: 0;
+}
+
+.banner_heading h1 {
+  font-weight: 700;
+  color: #ffff;
+  font-family: "Barlow", sans-serif;
+  font-size: 60px;
+  width: 1030px;
+  line-height: 72px;
+  margin: 0 0 35px 0;
+}
+
+.banner_heading h1 span {
+  color: #218B00;
+}
+
+.banner_heading p {
+  font-family: Barlow;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: center;
+  color: #E0D9D9;
+  margin: 0 0 35px 0;
+}
+
+.location_input {
+  display: flex;
+  align-items: center;
+}
+
+.location_input .explore_btn {
+  position: absolute;
+  right: 335px;
+}
+
+.location_input .explore_btn a {
+  background-color: #000000;
+  color: #57D62F;
+  font-size: 18px;
+  font-family: Barlow;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 39px;
+  padding: 20px 40px;
+}
+
+.location_input input {
+  border-radius: 40px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Barlow;
+  outline: 0;
+  border: 0;
+  height: 73px;
+  width: 607px;
+  padding: 0 25px;
+  text-transform: capitalize;
+  position: relative;
+}
+
+/* end-bannar-css*/
+/* start-partnership-css*/
+.partnership-section {
+  background-color: #0d251f;
+  color: white;
+  padding: 50px 15px;
+  margin-top: -7px;
+}
+
+.partnership-section h1 {
+  font-weight: bold;
+  color: white;
+  line-height: 1.2;
+}
+
+.partnership-section h1 span {
+  color: #28a745;
+}
+
+.description {
+  font-size: 18px;
+  color: #a9d3c1;
+}
+
+.travel-img img {
+  width: 100%;
+}
+
+/* start-card-sec-css*/
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 262px;
+  height: 240px;
+  top: 21px;
+  left: 21px;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-family: sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 34.1px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+
+.card-text {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+
+.col-md-4.mb-4 {
+  width: 304px;
+}
+
+.win-sec {
+  justify-content: center;
+  gap: 56px;
+}
+
+/* end-card-sec-css*/
+
+/* start-much-sec-css*/
+section.much-sec {
+  padding: 0 50px;
+  margin: 0 55px;
+}
+
+.col-md-8 {
+  padding: 50px;
+}
+
+.card-title {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36.8px;
+  letter-spacing: -0.3199999928474426px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding-bottom: 10PX;
+
+}
+
+.card-text {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27.9px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+
+.card-body {
+  width: 100%;
+}
+
+.right-card.mb-3 {
+  padding-bottom: 50px;
+}
+
+/* end-much-sec-css*/
+
+/* start-map-sec-css*/
+.btn-custom {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #218838;
+}
+
+.map-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* end-map-sec-css*/
+
+/* start-footar-sec-css*/
+.footer {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+
+.footer h5 {
+  font-weight: bold;
+}
+
+.social-icons a {
+  color: #28a745;
+  font-size: 20px;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #1c7430;
+}
+
+.newsletter-input {
+  max-width: 300px;
+}
+
+.btn-newsletter {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+}
+
+.btn-newsletter:hover {
+  background-color: #218838;
+}
+
+.burger_menu a i {
+  font-size: 35px;
+  color: black;
+  opacity: 0.8;
+}
+
+.burger_menu {
+  display: none;
+}
+
+.burger_menu a {}
+
+@media only screen and (max-width:576px) {
+  .container {
+    width: 100%;
+  }
+
+  .main_header {
+    width: 530px;
+    max-width: 100%;
+  }
+
+  .header_menu>ul,
+  .get_started_btn>a {
+    display: none;
+  }
+
+  .header_menu>ul {
+    position: absolute;
+    background: #c3cec4;
+    width: 100%;
+    top: 80px;
+    left: 0;
+    border-radius: 8px;
+    line-height: 35px;
+    padding: 15px 0 15px 30px;
+  }
+
+  .banner_heading h1 {
+    width: 480px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .banner_heading {
+    height: 390px;
+  }
+
+  .banner_heading p {
+    font-size: 18px;
+    line-height: 0.8px;
+  }
+
+  .location_input input {
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Barlow;
+    outline: 0;
+    border: 0;
+    height: 50px;
+    width: 400px;
+    padding: 0 25px;
+    text-transform: capitalize;
+    position: relative;
+  }
+
+  .burger_menu {
+    display: block;
+  }
+}
+
+/* end-footar-sec-css*/
